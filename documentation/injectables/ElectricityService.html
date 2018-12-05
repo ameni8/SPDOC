@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-admin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-admin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>ElectricityService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/@core/data/electricity.service.ts</code>
+        </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#data">data</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getData">getData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/@core/data/electricity.service.ts:59</a></div>
+                            </td>
+                        </tr>
+
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getData"></a>
+                        <span class="name">
+                            <b>
+                            getData
+                            </b>
+                            <a href="#getData"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>getData()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/@core/data/electricity.service.ts:65</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>{}</code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            data
+                            </b>
+                            <a href="#data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>data:     <code>[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[
+    {
+      title: &#x27;2015&#x27;,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;0.97&#x27;, down: true, kWatts: &#x27;816&#x27;, cost: &#x27;97&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;1.83&#x27;, down: true, kWatts: &#x27;806&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.64&#x27;, down: true, kWatts: &#x27;803&#x27;, cost: &#x27;94&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;2.17&#x27;, down: false, kWatts: &#x27;818&#x27;, cost: &#x27;98&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;1.32&#x27;, down: true, kWatts: &#x27;809&#x27;, cost: &#x27;96&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.05&#x27;, down: true, kWatts: &#x27;808&#x27;, cost: &#x27;96&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;1.39&#x27;, down: false, kWatts: &#x27;815&#x27;, cost: &#x27;97&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;0.73&#x27;, down: true, kWatts: &#x27;807&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;2.61&#x27;, down: true, kWatts: &#x27;792&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;0.16&#x27;, down: true, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;1.71&#x27;, down: true, kWatts: &#x27;786&#x27;, cost: &#x27;89&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;0.37&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+      ],
+    },
+    {
+      title: &#x27;2016&#x27;,
+      active: true,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;1.56&#x27;, down: true, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;0.33&#x27;, down: false, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.62&#x27;, down: true, kWatts: &#x27;790&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;1.93&#x27;, down: true, kWatts: &#x27;783&#x27;, cost: &#x27;87&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;2.52&#x27;, down: true, kWatts: &#x27;771&#x27;, cost: &#x27;83&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.39&#x27;, down: false, kWatts: &#x27;774&#x27;, cost: &#x27;85&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;1.61&#x27;, down: true, kWatts: &#x27;767&#x27;, cost: &#x27;81&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;1.41&#x27;, down: true, kWatts: &#x27;759&#x27;, cost: &#x27;76&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;1.03&#x27;, down: true, kWatts: &#x27;752&#x27;, cost: &#x27;74&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;2.94&#x27;, down: false, kWatts: &#x27;769&#x27;, cost: &#x27;82&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;0.26&#x27;, down: true, kWatts: &#x27;767&#x27;, cost: &#x27;81&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;1.62&#x27;, down: true, kWatts: &#x27;760&#x27;, cost: &#x27;76&#x27; },
+      ],
+    },
+    {
+      title: &#x27;2017&#x27;,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;1.34&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;0.95&#x27;, down: false, kWatts: &#x27;793&#x27;, cost: &#x27;93&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.25&#x27;, down: true, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;1.72&#x27;, down: false, kWatts: &#x27;797&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;2.62&#x27;, down: true, kWatts: &#x27;786&#x27;, cost: &#x27;90&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.72&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;0.78&#x27;, down: true, kWatts: &#x27;784&#x27;, cost: &#x27;89&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;0.36&#x27;, down: true, kWatts: &#x27;782&#x27;, cost: &#x27;88&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;0.55&#x27;, down: false, kWatts: &#x27;787&#x27;, cost: &#x27;90&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;1.81&#x27;, down: true, kWatts: &#x27;779&#x27;, cost: &#x27;86&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;1.12&#x27;, down: true, kWatts: &#x27;774&#x27;, cost: &#x27;84&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;0.52&#x27;, down: false, kWatts: &#x27;776&#x27;, cost: &#x27;95&#x27; },
+      ],
+    },
+  ]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="6" class="link-to-prism">src/app/@core/data/electricity.service.ts:6</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+
+@Injectable()
+export class ElectricityService {
+
+  private data &#x3D; [
+    {
+      title: &#x27;2015&#x27;,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;0.97&#x27;, down: true, kWatts: &#x27;816&#x27;, cost: &#x27;97&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;1.83&#x27;, down: true, kWatts: &#x27;806&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.64&#x27;, down: true, kWatts: &#x27;803&#x27;, cost: &#x27;94&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;2.17&#x27;, down: false, kWatts: &#x27;818&#x27;, cost: &#x27;98&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;1.32&#x27;, down: true, kWatts: &#x27;809&#x27;, cost: &#x27;96&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.05&#x27;, down: true, kWatts: &#x27;808&#x27;, cost: &#x27;96&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;1.39&#x27;, down: false, kWatts: &#x27;815&#x27;, cost: &#x27;97&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;0.73&#x27;, down: true, kWatts: &#x27;807&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;2.61&#x27;, down: true, kWatts: &#x27;792&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;0.16&#x27;, down: true, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;1.71&#x27;, down: true, kWatts: &#x27;786&#x27;, cost: &#x27;89&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;0.37&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+      ],
+    },
+    {
+      title: &#x27;2016&#x27;,
+      active: true,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;1.56&#x27;, down: true, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;0.33&#x27;, down: false, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.62&#x27;, down: true, kWatts: &#x27;790&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;1.93&#x27;, down: true, kWatts: &#x27;783&#x27;, cost: &#x27;87&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;2.52&#x27;, down: true, kWatts: &#x27;771&#x27;, cost: &#x27;83&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.39&#x27;, down: false, kWatts: &#x27;774&#x27;, cost: &#x27;85&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;1.61&#x27;, down: true, kWatts: &#x27;767&#x27;, cost: &#x27;81&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;1.41&#x27;, down: true, kWatts: &#x27;759&#x27;, cost: &#x27;76&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;1.03&#x27;, down: true, kWatts: &#x27;752&#x27;, cost: &#x27;74&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;2.94&#x27;, down: false, kWatts: &#x27;769&#x27;, cost: &#x27;82&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;0.26&#x27;, down: true, kWatts: &#x27;767&#x27;, cost: &#x27;81&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;1.62&#x27;, down: true, kWatts: &#x27;760&#x27;, cost: &#x27;76&#x27; },
+      ],
+    },
+    {
+      title: &#x27;2017&#x27;,
+      months: [
+        { month: &#x27;Jan&#x27;, delta: &#x27;1.34&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Feb&#x27;, delta: &#x27;0.95&#x27;, down: false, kWatts: &#x27;793&#x27;, cost: &#x27;93&#x27; },
+        { month: &#x27;Mar&#x27;, delta: &#x27;0.25&#x27;, down: true, kWatts: &#x27;791&#x27;, cost: &#x27;92&#x27; },
+        { month: &#x27;Apr&#x27;, delta: &#x27;1.72&#x27;, down: false, kWatts: &#x27;797&#x27;, cost: &#x27;95&#x27; },
+        { month: &#x27;May&#x27;, delta: &#x27;2.62&#x27;, down: true, kWatts: &#x27;786&#x27;, cost: &#x27;90&#x27; },
+        { month: &#x27;Jun&#x27;, delta: &#x27;0.72&#x27;, down: false, kWatts: &#x27;789&#x27;, cost: &#x27;91&#x27; },
+        { month: &#x27;Jul&#x27;, delta: &#x27;0.78&#x27;, down: true, kWatts: &#x27;784&#x27;, cost: &#x27;89&#x27; },
+        { month: &#x27;Aug&#x27;, delta: &#x27;0.36&#x27;, down: true, kWatts: &#x27;782&#x27;, cost: &#x27;88&#x27; },
+        { month: &#x27;Sept&#x27;, delta: &#x27;0.55&#x27;, down: false, kWatts: &#x27;787&#x27;, cost: &#x27;90&#x27; },
+        { month: &#x27;Oct&#x27;, delta: &#x27;1.81&#x27;, down: true, kWatts: &#x27;779&#x27;, cost: &#x27;86&#x27; },
+        { month: &#x27;Nov&#x27;, delta: &#x27;1.12&#x27;, down: true, kWatts: &#x27;774&#x27;, cost: &#x27;84&#x27; },
+        { month: &#x27;Dec&#x27;, delta: &#x27;0.52&#x27;, down: false, kWatts: &#x27;776&#x27;, cost: &#x27;95&#x27; },
+      ],
+    },
+  ];
+
+  constructor() {
+  }
+
+  // TODO: observables
+  getData() {
+    return this.data;
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ElectricityService.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

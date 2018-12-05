@@ -1,0 +1,1086 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>ngx-admin documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">ngx-admin documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>TotalConfigComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/total-config/total-config.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>ngx-total-config</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./total-config.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./total-config.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#endHour">endHour</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#endHourNumber">endHourNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#maxTemp">maxTemp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#minTemp">minTemp</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sensorsMap">sensorsMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#startHour">startHour</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#startHourNumber">startHourNumber</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#initiate">initiate</a>
+                            </li>
+                            <li>
+                                <a href="#modifyFieldValue">modifyFieldValue</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#saveFieldValue">saveFieldValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sharedVar: <a href="../injectables/PsSharedState.html">PsSharedState</a>, sharedSensordata: <a href="../injectables/PsSharedData.html">PsSharedData</a>, httpGet: <a href="https://angular.io/api/http/Http" target="_blank">Http</a>, httpPost: <a href="https://angular.io/api/http/Http" target="_blank">Http</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sharedVar</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/PsSharedState.html" target="_self" >PsSharedState</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedSensordata</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/PsSharedData.html" target="_self" >PsSharedData</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>httpGet</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/http/Http" target="_blank" >Http</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>httpPost</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/http/Http" target="_blank" >Http</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initiate"></a>
+                        <span class="name">
+                            <b>
+                            initiate
+                            </b>
+                            <a href="#initiate"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>initiate()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="modifyFieldValue"></a>
+                        <span class="name">
+                            <b>
+                            modifyFieldValue
+                            </b>
+                            <a href="#modifyFieldValue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>modifyFieldValue(index)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>index</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:22</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveFieldValue"></a>
+                        <span class="name">
+                            <b>
+                            saveFieldValue
+                            </b>
+                            <a href="#saveFieldValue"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>saveFieldValue()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="endHour"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            endHour
+                            </b>
+                            <a href="#endHour"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>endHour:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;00:00&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:18</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="endHourNumber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            endHourNumber
+                            </b>
+                            <a href="#endHourNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>endHourNumber:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="maxTemp"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            maxTemp
+                            </b>
+                            <a href="#maxTemp"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>maxTemp:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:16</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="minTemp"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            minTemp
+                            </b>
+                            <a href="#minTemp"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>minTemp:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:15</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sensorsMap"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            sensorsMap
+                            </b>
+                            <a href="#sensorsMap"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>sensorsMap:     <code><a href="../classes/Sensor.html" target="_self" >Map&lt;string | Sensor&gt;</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../classes/Sensor.html" target="_self" >Map&lt;string | Sensor&gt;</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new Map()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:14</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="startHour"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            startHour
+                            </b>
+                            <a href="#startHour"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>startHour:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>&#x27;00:00&#x27;</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:17</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="startHourNumber"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            startHourNumber
+                            </b>
+                            <a href="#startHourNumber"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>startHourNumber:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/pages/total-config/total-config.component.ts:19</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, OnInit} from &#x27;@angular/core&#x27;;
+import {Sensor} from &#x27;../../sensor&#x27;;
+import {PsSharedData} from &#x27;../../@core/ps.shared-data&#x27;;
+import {PsSharedState} from &#x27;../../@core/ps.shared-state&#x27;;
+import {Http} from &#x27;@angular/http&#x27;;
+
+@Component({
+  selector: &#x27;ngx-total-config&#x27;,
+  templateUrl: &#x27;./total-config.component.html&#x27;,
+  styleUrls: [&#x27;./total-config.component.scss&#x27;],
+})
+export class TotalConfigComponent implements OnInit {
+
+  public sensorsMap: Map&lt;string, Sensor&gt; &#x3D; new Map();
+  public minTemp &#x3D; &#x27;&#x27;;
+  public maxTemp &#x3D; &#x27;&#x27;;
+  public startHour &#x3D; &#x27;00:00&#x27;;
+  public endHour &#x3D; &#x27;00:00&#x27;;
+  public startHourNumber: number;
+  public endHourNumber: number;
+
+  ngOnInit() {
+  }
+
+  constructor(private sharedVar: PsSharedState, private sharedSensordata: PsSharedData, private httpGet: Http, private httpPost: Http) {
+  }
+
+
+  modifyFieldValue(index) {
+
+  }
+
+  initiate() {
+    this.minTemp &#x3D; &#x27;&#x27;;
+    this.maxTemp &#x3D; &#x27;&#x27;;
+    this.startHour &#x3D; &#x27;00:00&#x27;;
+    this.endHour &#x3D; &#x27;00:00&#x27;;
+  }
+
+  saveFieldValue() {
+    if (parseInt(this.minTemp, 10) &lt;&#x3D; 20 &amp;&amp; parseInt(this.maxTemp, 10) &gt;&#x3D; 25) {
+      const starthour &#x3D; Number(this.startHour.toString().substr(0, 2)) * 60 +
+        Number(this.startHour.toString().substr(3, 2));
+      const endhour &#x3D; Number(this.endHour.toString().substr(0, 2)) * 60 +
+        Number(this.endHour.toString().substr(3, 2));
+      const addedSensor: Sensor &#x3D; new Sensor(&#x27;****&#x27;, false, &#x27;*****&#x27;,
+        &#x27;*****&#x27;, parseInt(this.minTemp, 10), parseInt(this.maxTemp, 10),
+        new Date((starthour - 60) * 60000), new Date((endhour - 60) * 60000), 0);
+      this.httpGet.post(&#x27;/editTotalConfig&#x27;,
+        [this.minTemp, this.maxTemp,
+          starthour, endhour]).subscribe();
+    } else {
+      alert(&#x27;No valid sensor to add !&#x27;);
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div style&#x3D;&quot;margin-left: 25%; width: 50%; margin-top: 5%&quot;&gt;
+  &lt;nb-card&gt;
+    &lt;nb-card-header&gt;
+      Custom Total Configuration Interface
+    &lt;/nb-card-header&gt;
+
+    &lt;nb-card-body class&#x3D;&quot;a&quot;&gt;
+
+      &lt;table class&#x3D;&quot;table table-striped table-bordered&quot;&gt;
+        &lt;tbody&gt;
+        &lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;
+        &lt;tr class&#x3D;&quot;a&quot;&gt;
+          &lt;td class&#x3D;&quot;a&quot;&gt;Min Temperature&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input class&#x3D;&quot;form-control a&quot; type&#x3D;&quot;number&quot; id&#x3D;&quot;minT&quot; [(ngModel)]&#x3D;&quot;minTemp&quot;
+                   name&#x3D;&quot;minTemperature&quot; placeholder&#x3D;&quot;15&quot; step&#x3D;&quot;0.1&quot; max&#x3D;&quot;20&quot;/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class&#x3D;&quot;a&quot;&gt;
+          &lt;td class&#x3D;&quot;a&quot;&gt;Max Temperature&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input class&#x3D;&quot;form-control a&quot; type&#x3D;&quot;number&quot; id&#x3D;&quot;maxT&quot; [(ngModel)]&#x3D;&quot;maxTemp&quot;
+                   name&#x3D;&quot;maxTemperature&quot; placeholder&#x3D;&quot;25&quot; step&#x3D;&quot;0.1&quot; min&#x3D;&quot;25&quot;/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class&#x3D;&quot;a&quot;&gt;
+          &lt;td class&#x3D;&quot;a&quot;&gt;Start Hour&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input class&#x3D;&quot;form-control a&quot; type&#x3D;&quot;time&quot; id&#x3D;&quot;startH&quot; [(ngModel)]&#x3D;&quot;startHour&quot; name&#x3D;&quot;startHour&quot;/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class&#x3D;&quot;a&quot;&gt;
+          &lt;td class&#x3D;&quot;a&quot;&gt;End Hour&lt;/td&gt;
+          &lt;td&gt;
+            &lt;input class&#x3D;&quot;form-control a&quot; type&#x3D;&quot;time&quot; id&#x3D;&quot;endH&quot; [(ngModel)]&#x3D;&quot;endHour&quot; name&#x3D;&quot;endHour&quot;/&gt;
+          &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+      &lt;button class&#x3D;&quot;btn btn-default&quot; type&#x3D;&quot;button&quot; (click)&#x3D;&quot;saveFieldValue()&quot;&gt;
+        &lt;i aria-hidden&#x3D;&quot;true&quot; style&#x3D;&quot;color: black&quot;&gt;Submit&lt;/i&gt;
+      &lt;/button&gt;
+    &lt;/nb-card-body&gt;
+  &lt;/nb-card&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./total-config.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &#x27;../../@theme/styles/themes&#x27;;
+@import &#x27;~@nebular/theme/styles/global/bootstrap/buttons&#x27;;
+@import &#x27;~@nebular/theme/styles/global/bootstrap/hero-buttons&#x27;;
+@import &#x27;~bootstrap/scss/mixins/breakpoints&#x27;;
+@import &#x27;~@nebular/theme/styles/global/bootstrap/breakpoints&#x27;;
+
+#table {
+  font-family: &#x27;nebular&#x27; !important;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+.a {
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: &#x27;Arial Rounded MT Bold&#x27;;
+  vertical-align: middle;
+}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  horiz-align: center;
+  background-color: #17a2b8;
+  font-size: 1.2rem;
+}
+
+#table td, #table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+#table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#table tr:hover {
+  background-color: #ddd;
+
+}
+
+.light {
+  color: #3A3A3A;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: nb-theme(font-weight-bold);
+  horiz-align: center;
+}
+
+table &gt; tbody &gt; tr &gt; td{
+  width: 50%;
+}
+.slider::before {
+  position: absolute;
+  content: &#x27;&#x27;;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  background-color: nb-theme(color-success);
+  transition: 0.2s;
+  box-shadow: 0 0 0.25rem 0 nb-theme(layout-bg);
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 1.75rem;
+  background-color: #ebeff5;
+
+}
+
+.light {
+  color: #3A3A3A;
+  vertical-align: middle;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: nb-theme(font-weight-bold);
+}
+
+input:checked + .slider {
+  background-color: #09af64;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 1.75rem;
+  margin: 0;
+
+}
+
+input {
+  .special {
+    display: none;
+  }
+
+  &amp;:checked + .slider::before {
+    transform: translateX(2.25rem);
+  }
+}
+
+.switcher {
+  margin-left: 17%;
+  align-content: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.theme {
+  display: block;
+
+}
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div style="margin-left: 25%; width: 50%; margin-top: 5%">  <nb-card>    <nb-card-header>      Custom Total Configuration Interface    </nb-card-header>    <nb-card-body class="a">      <table class="table table-striped table-bordered">        <tbody>        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        <tr class="a">          <td class="a">Min Temperature</td>          <td>            <input class="form-control a" type="number" id="minT" [(ngModel)]="minTemp"                   name="minTemperature" placeholder="15" step="0.1" max="20"/>          </td>        </tr>        <tr class="a">          <td class="a">Max Temperature</td>          <td>            <input class="form-control a" type="number" id="maxT" [(ngModel)]="maxTemp"                   name="maxTemperature" placeholder="25" step="0.1" min="25"/>          </td>        </tr>        <tr class="a">          <td class="a">Start Hour</td>          <td>            <input class="form-control a" type="time" id="startH" [(ngModel)]="startHour" name="startHour"/>          </td>        </tr>        <tr class="a">          <td class="a">End Hour</td>          <td>            <input class="form-control a" type="time" id="endH" [(ngModel)]="endHour" name="endHour"/>          </td>        </tr>        </tbody>      </table>      <button class="btn btn-default" type="button" (click)="saveFieldValue()">        <i aria-hidden="true" style="color: black">Submit</i>      </button>    </nb-card-body>  </nb-card></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'ngx-app'},{'name': 'ConfigComponent', 'selector': 'ngx-config'},{'name': 'DashboardComponent', 'selector': 'ngx-dashboard'},{'name': 'FooterComponent', 'selector': 'ngx-footer'},{'name': 'HeaderComponent', 'selector': 'ngx-header'},{'name': 'OneColumnLayoutComponent', 'selector': 'ngx-one-column-layout'},{'name': 'PagesComponent', 'selector': 'ngx-pages'},{'name': 'SampleLayoutComponent', 'selector': 'ngx-sample-layout'},{'name': 'SearchInputComponent', 'selector': 'ngx-search-input'},{'name': 'StatisticsComponent', 'selector': 'ngx-statistics'},{'name': 'ThemeSettingsComponent', 'selector': 'ngx-theme-settings'},{'name': 'ThemeSwitcherComponent', 'selector': 'ngx-theme-switcher'},{'name': 'ThreeColumnsLayoutComponent', 'selector': 'ngx-three-columns-layout'},{'name': 'TinyMCEComponent', 'selector': 'ngx-tiny-mce'},{'name': 'TotalConfigComponent', 'selector': 'ngx-total-config'},{'name': 'TwoColumnsLayoutComponent', 'selector': 'ngx-two-columns-layout'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'TotalConfigComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'TotalConfigComponent.html';
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
